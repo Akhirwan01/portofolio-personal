@@ -1,0 +1,370 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    
+}
+.navbar{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(50px);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    position: sticky;
+    z-index: 100;
+    
+  
+}
+.navbar ul{
+   display: flex;
+   align-items: center;
+   position: relative;
+   right: 2vh;
+   gap: 1rem;
+   list-style: none;
+   font-size: larger;
+  
+}
+.image img{
+border-radius: 100px;
+width: 80px;
+border: 2px solid  #ffffff;
+animation: heartBeat 1500ms infinite;
+transition: all 5s ;
+position: relative;
+left: 3vh;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 8px 0;
+    transition: all;
+    transition-duration: 300ms;
+    font-family: cursive;
+   
+}
+.navbar ul li a:hover{
+    color: rgb(146, 139, 139);
+    border-bottom: 1px solid #ffffff;
+}
+.home{
+  font-family: cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  position: relative;
+  z-index: 91;
+  top: 15vh;
+  right: 10vh;
+}
+.home img{
+  border-radius: 100%;
+  border: 3px solid rgb(255, 255, 255);
+  
+}
+.name{
+  color: #ffffff;
+  text-align: center;
+}
+span{
+  color: greenyellow;
+}
+.web{
+  padding: 0px 80px;
+}
+button{
+  border: none;
+  border-radius: 5px;
+  border: 2px solid #ffffff;
+  color: #000000;
+  background: greenyellow;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{
+  border: 2px solid greenyellow;
+  color: #000000;
+  background: rgb(255, 255, 255);
+  animation: jello 1200ms;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    background-position: right;
+  }
+    .navbar{
+      display: grid;
+      grid-column: 1, 1fr;
+      justify-content: center;
+    }
+    .navbar ul{
+      font-size: smaller;
+      gap: 2rem;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        right: 10vh;
+    }
+    .about{
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .home{
+      gap: 0rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      top: 5vh;
+      right: 0;
+    }
+ 
+    .home img{
+      width: 150px;
+      height: auto;
+    }
+   .name{
+    font-size: medium;
+   }
+   .web{
+    padding: 0%;
+   }
+   .sd{
+    width: 10%;
+   }
+  }
+  @media only screen and (max-width: 800px) {
+    body{
+      background-position: center;
+    }
+    .navbar{
+      display: grid;
+      grid-column: 1, 1fr;
+      justify-content: center;
+      width: 100%;
+    }
+    .navbar ul{
+        font-size: small;
+        gap: 2rem;
+      }
+    .image{
+        display: flex;
+        justify-content: center;
+    }
+    .about{
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .home{
+      gap: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      top: 5vh;
+      right: 0;
+    }
+    .home img{
+      width: 150px;
+      height: auto;
+    }
+   .name{
+    font-size: medium;
+   }
+   .web{
+    padding: 0px 80px;
+   }
+  }
+  .sd{
+    background-color: rgb(146, 139, 139);
+    color: #ffffff;
+    font-family: cursive;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    z-index: 99;
+    top: 2vh;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .judul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 2vh;
+    color: rgb(255, 187, 0);
+    font-size: medium;
+  }
+  .judul-sd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1vh;
+    left: 5vh;
+    color: rgb(255, 187, 0);
+    font-size: medium;
+  }
+  .text-sd{
+    position: relative;
+    top: 1vh;
+    text-align: center;
+    font-size: small;
+  }
+  .text{
+    position: relative;
+    top: 3vh;
+    text-align: center;
+    font-size: small;
+  }
+  .smp{
+    background-color: rgb(146, 139, 139);
+    color: #ffffff;
+    font-family: cursive;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    z-index: 99;
+    top: 2vh;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+  }
+
+  .sma{
+    background-color: rgb(146, 139, 139);
+    color: #ffffff;
+    font-family: cursive;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    z-index: 99;
+    top: 2vh;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+  }
+  .pend{
+    position: relative;
+    z-index: 97;
+    top: 10vh;
+    color: #ffffff;
+    font-family: cursive;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+
+  .kuliah{
+    background-color: rgb(146, 139, 139);
+    color: #ffffff;
+    font-family: cursive;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    z-index: 99;
+    top: 2vh;
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+  }
+  .about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    position: relative;
+    z-index: 98;
+    top: 15vh;
+  }
+  .about-bg{
+    background-color: rgb(29, 29, 29);
+    position: relative;
+    z-index: 90;
+    top: 50vh;
+    width: 100%;
+    height: 650px;
+  }
+
+  .sd:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border: 3px solid rgb(229, 255, 0);
+    animation: tada;
+    animation-duration: 2s; 
+  }
+  .smp:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border: 3px solid rgb(229, 255, 0);
+    animation: tada;
+    animation-duration: 2s; 
+  }
+  .sma:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border: 3px solid rgb(229, 255, 0);
+    animation: tada;
+    animation-duration: 2s; 
+  }
+  .kuliah:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border: 3px solid rgb(229, 255, 0);
+    animation: tada;
+    animation-duration: 2s; 
+  }
+  .image_sd{
+    position: relative;
+    z-index: 95;
+    top: 3vh;
+  }
+  .image_smp{
+    position: relative;
+    z-index: 95;
+    top: 3vh;
+  }
+  .image_sma{
+    position: relative;
+    z-index: 95;
+    top: 3vh;
+  }
+  .image_kuliah{
+       position: relative;
+    z-index: 95;
+    top: 3vh
+  }
+    .btn-home{
+      color: #000000;
+      text-decoration: none;
+      font: large cursive;
+      background-color: greenyellow;
+      width: 70px;
+      height: 25px;
+      text-align: center;
+      border-radius: 5px;
+      border: 2px solid white;
+    }
+    .sd-bg img{
+      border-radius: 3px;
+      position: relative;
+      z-index: 94;
+      top: 10vh;
+      left: 3.5vh;
+    }
