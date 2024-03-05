@@ -180,9 +180,11 @@ button:hover{
     }
    .name{
     font-size: medium;
+    font-family: "Madimi One", sans-serif;
    }
    .web{
     padding: 0px 80px;
+    font-family: "Kode Mono", monospace;
    }
   }
   .sd{
