@@ -49,7 +49,7 @@ left: 3vh;
     padding: 8px 0;
     transition: all;
     transition-duration: 300ms;
-    font-family: cursive;
+     font-family: "Madimi One", sans-serif;
    
 }
 .navbar ul li a:hover{
@@ -75,12 +75,14 @@ left: 3vh;
 .name{
   color: #ffffff;
   text-align: center;
+  font-family: "Madimi One", sans-serif;
 }
 span{
   color: greenyellow;
 }
 .web{
   padding: 0px 80px;
+ font-family: "Kode Mono", monospace;
 }
 button{
   border: none;
@@ -97,7 +99,7 @@ button:hover{
   animation: jello 1200ms;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   body{
     background-position: right;
   }
@@ -113,7 +115,8 @@ button:hover{
     .image{
         display: flex;
         justify-content: center;
-        right: 10vh;
+        position: relative;
+        right: 1vh;
     }
     .about{
         flex-wrap: wrap;
@@ -125,12 +128,12 @@ button:hover{
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      top: 5vh;
+      top: 20vh;
       right: 0;
     }
  
     .home img{
-      width: 150px;
+      width: 220px;
       height: auto;
     }
    .name{
@@ -143,7 +146,7 @@ button:hover{
     width: 10%;
    }
   }
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 1000px) {
     body{
       background-position: center;
     }
@@ -370,3 +373,9 @@ button:hover{
       top: 10vh;
       left: 3.5vh;
     }
+.about-bg{
+    font-family: "Kode Mono", monospace;
+}
+.about .judul-sd .judul{
+      font-family: "Madimi One", sans-serif;
+}
